@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Technician</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="image/icon.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="image/icon.png" id="icon">
+            <h1>SOS Technician</h1> 
+        </div>
+        <nav class="menu">
+            <a href="login/php/commun.html" class="mn">Login</a>
+            <a href="info/about.html" class="mn">Sobre Nós</a>
+            <a href="info/path.html" class="mn">Notas</a>
+            <link rel="shortcut icon" href="../Image/icon.jpg" type="image/x-icon">
+        </nav>
+    </header>
+    <main>
+        <div id="carrossel" class="carousel">
+            <div class="carousel-item">
+                <img src="Image/o-que-faz-enfermeiro-do-trabalho-scaled-e1665084282844-1600x900.jpg" alt="Imagem 1">
+                <p>Estamos aqui para apoiar você!</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/enfermeira.jpg" alt="Imagem 2">
+                <p>Contribua para a saúde e bem-estar de todos</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Image/Cancaso.jpg" alt="Imagem 3">
+                <p>Evite a sobrecarga da sua equipe!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Entre em contato no e-mail: contato@subplant.com</p>
+    </footer>
+</body>
+<script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+
+    function showNextItem() {
+        items[currentIndex].style.transform = 'translateX(-100%)';
+        currentIndex = (currentIndex + 1) % items.length;
+        items[currentIndex].style.transform = 'translateX(0)';
+    }
+
+    setInterval(showNextItem, 3000); // Change slide every 3 seconds
+</script>
+</html>

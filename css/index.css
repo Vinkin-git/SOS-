@@ -1,0 +1,121 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#icon {
+    height: 10.8vh;
+    width: 5vw;
+    margin-right: 1rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background-color: rgb(85, 131, 33);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .title h1 {
+    margin: 0;
+}
+
+header .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+header .mn {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .mn:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgb(61, 17, 102);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Main content and carousel styles */
+main {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+img {
+    size: 4vh;
+}
+
+#carrossel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item p {
+    text-align: center;
+    align-self: center;
+    position: absolute;
+    bottom: 20%;
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 10vh;
+    bottom: 7vh;
+}

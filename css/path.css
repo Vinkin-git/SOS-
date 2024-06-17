@@ -1,0 +1,52 @@
+
+body {
+    background-image: url("../Image/Path-back.png"); 
+    padding-bottom: 0;
+    margin-bottom: 17vh;
+}
+
+main {
+    background-color: rgb(244, 225, 208);
+    height: 56vh;
+}
+
+p {
+    padding: 10%;
+    font-weight: 100;
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-size: 1.5em; /* Ajusta o tamanho da fonte para uma escala legível */
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(80, 11, 145);
+    text-align: left;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+    padding-bottom: 10vh;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 0;
+    font-size: 5vw;
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto do h2 */
+    font-size: 4vw;
+    color: rgb(219, 166, 20);
+}
+
+h3 {
+    font-size: 1.3em;
+    color: rgb(219, 166, 20);
+}
+
+.seta {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2em;
+    text-decoration: none;
+    color: rgb(80, 11, 145); /* Cor da seta para corresponder ao estilo */
+}
